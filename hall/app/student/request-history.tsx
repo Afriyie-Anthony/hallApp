@@ -7,7 +7,7 @@ const RequestHistoryScreen = () => {
     const assignedRoom = item.assignedRoom ? rooms.find(r => r.id === item.assignedRoom) : null;
 
     return (
-      <View className="bg-white p-4 rounded-lg shadow-md mb-4">
+      <View className="bg-white p-4 rounded-lg  mb-4">
         <Text className="text-lg font-bold">Request ID: {item.id}</Text>
         <Text className="text-gray-700">Date: {item.date}</Text>
         <Text className="text-gray-700">Status: {item.status.charAt(0).toUpperCase() + item.status.slice(1)}</Text>
@@ -19,7 +19,7 @@ const RequestHistoryScreen = () => {
   };
 
   return (
-    <View className="flex-1 bg-gray-100 p-4 mt-10">
+    <View className="flex-1  p-4 mt-10">
       <Text className="text-3xl font-bold text-[#900633] mb-6 text-center">
         My Request History
       </Text>

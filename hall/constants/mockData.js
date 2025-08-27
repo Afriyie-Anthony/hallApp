@@ -19,12 +19,14 @@ export const blocks = [
   { id: "B1", name: "Block A" },
   { id: "B2", name: "Block B" },
   { id: "B3", name: "Block C" },
+  { id: "B4", name: "Block D" },
 ];
 
 export const floors = [
   { id: "F1", name: "Ground Floor" },
   { id: "F2", name: "First Floor" },
   { id: "F3", name: "Second Floor" },
+  { id: "F4", name: "Third Floor" },
 ];
 
 export const rooms = [

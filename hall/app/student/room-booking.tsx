@@ -37,7 +37,7 @@ const RoomBookingScreen = () => {
   };
 
   const renderRoomItem = ({ item }: { item: Room }) => ( // Explicitly type 'item'
-    <View className="bg-white p-4 rounded-lg shadow-md mb-4 flex-row justify-between items-center mt-10">
+    <View className="bg-white p-4 rounded-lg mb-4 flex-row justify-between items-center ">
       <View>
         <Text className="text-lg font-bold">{item.name}</Text>
         <Text className="text-gray-600">
@@ -61,13 +61,13 @@ const RoomBookingScreen = () => {
   );
 
   return (
-    <View className="flex-1 bg-gray-100 p-4">
+    <View className="flex-1 px-4 pt-16">
       <Text className="text-3xl font-bold text-[#900633] mb-6 text-center">
         Room Booking
       </Text>
 
       {/* Filters */}
-      <View className="flex-row justify-around mb-4">
+      <View className="flex-col gap-5 justify-around mb-4">
         <View>
           <Text className="font-semibold mb-2">Block:</Text>
           <FlatList
@@ -125,7 +125,7 @@ const RoomBookingScreen = () => {
         visible={isModalVisible}
         onRequestClose={() => setIsModalVisible(false)}
       >
-        <View className="flex-1 justify-center items-center bg-black bg-opacity-50">
+        <View className="flex-1 justify-center items-center bg-black/70">
           <View className="bg-white p-6 rounded-lg shadow-lg w-4/5">
             <Text className="text-xl font-bold mb-4">
               Confirm Room Request
