@@ -18,7 +18,7 @@ const Login = () => {
       );
       if (student) {
         alert("Student Login Successful!");
-        router.replace("/student/profile"); // Navigate to student profile
+        router.replace("/(tabs)"); // Navigate to student profile
       } else {
         alert("Invalid Student Credentials");
       }

@@ -7,7 +7,7 @@ const SplashScreen = () => {
 
   useEffect(() => {
     setTimeout(() => {
-            router.replace("/onboarding/welcome"); // Navigate to the first onboarding screen
+            router.replace("/onboarding"); // Navigate to the onboarding screens
     }, 3000); // 3 seconds
   }, []);
 

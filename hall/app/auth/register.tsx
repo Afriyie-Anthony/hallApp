@@ -14,7 +14,7 @@ const Register = () => {
     // Mock registration logic
     if (name && indexNumber && email && password) {
       alert("Registration Successful! Please login.");
-      router.replace("/auth/login"); // Redirect to login
+      router.replace("/(tabs)"); // Redirect to home screen
     } else {
       alert("Please fill in all fields.");
     }

@@ -10,7 +10,7 @@ const ProfileScreen = () => {
 
   if (!student) {
     return (
-      <View className="flex-1 items-center justify-center bg-white p-4">
+      <View className="flex-1 items-center justify-center bg-white px-4">
         <Text className="text-xl text-red-500">Student data not found.</Text>
       </View>
     );
@@ -22,7 +22,7 @@ const ProfileScreen = () => {
   };
 
   return (
-    <View className="flex-1 bg-white p-4 mt-10">
+    <View className="flex-1 bg-white px-4 mt-10">
       <Text className="text-3xl font-bold text-[#900633] mb-6 text-center">
         My Profile
       </Text>
@@ -36,14 +36,14 @@ const ProfileScreen = () => {
 
       <TouchableOpacity
         className="bg-[#900633] px-6 py-3 rounded-lg mb-4"
-        onPress={() => router.push("/student/room-booking")}
+        onPress={() => router.push("/(tabs)/reservations")}
       >
-        <Text className="text-white text-lg font-semibold text-center">Browse Rooms</Text>
+        <Text className="text-white text-lg font-semibold text-center">Make a Reservation</Text>
       </TouchableOpacity>
 
       <TouchableOpacity
         className="bg-gray-300 px-6 py-3 rounded-lg mb-4"
-        onPress={() => router.push("/student/request-history")}
+        onPress={() => router.push("/(tabs)/reserved-rooms")}
       >
         <Text className="text-gray-800 text-lg font-semibold text-center">My Requests</Text>
       </TouchableOpacity>

@@ -67,7 +67,7 @@ const AdminDashboard = () => {
     const assignedRoom = item.assignedRoom ? rooms.find(r => r.id === item.assignedRoom) : null;
 
     return (
-      <View className="bg-white p-4 rounded-lg shadow-md mb-4">
+      <View className="bg-white p-4 rounded-lg shadow-md mb-4 mt-">
         <Text className="text-lg font-bold">Request ID: {item.id}</Text>
         {student && <Text className="text-gray-700">Student: {student.name} ({student.indexNumber})</Text>}
         <Text className="text-gray-700">Requested Room: {item.roomId}</Text>

@@ -1,6 +1,7 @@
 import { View, Text, FlatList, TouchableOpacity, Modal, TextInput } from "react-native";
 import React, { useState } from "react";
 import { blocks, floors, rooms } from "../../constants/mockData";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 // Define the Room interface
 interface Room {
@@ -12,7 +13,7 @@ interface Room {
   occupied: number;
 }
 
-const RoomBookingScreen = () => {
+const RoomReservationsScreen = () => {
   const [selectedBlock, setSelectedBlock] = useState(null);
   const [selectedFloor, setSelectedFloor] = useState(null);
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -61,9 +62,9 @@ const RoomBookingScreen = () => {
   );
 
   return (
-    <View className="flex-1 px-4 pt-16">
+    <SafeAreaView className="flex-1 px-4 pt-4 bg-gray-100">
       <Text className="text-3xl font-bold text-[#900633] mb-6 text-center">
-        Room Booking
+        Room Reservations
       </Text>
 
       {/* Filters */}
@@ -152,8 +153,8 @@ const RoomBookingScreen = () => {
           </View>
         </View>
       </Modal>
-    </View>
+    </SafeAreaView>
   );
 };
 
-export default RoomBookingScreen;
+export default RoomReservationsScreen;
